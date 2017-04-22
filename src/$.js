@@ -6,22 +6,22 @@ function $(selector) {
   return new Query(selector);
 }
 
-// DOCUMENT
-
-// Events
-$.ready = function (callback, scope) {
-  document.addEventListener('DOMContentLoaded', (event) => {
-    callback.call(scope, event);
-    document.removeEventListener('DOMContentLoaded', callback);
-  });
-};
-
 // WINDOW
 
 // Events
-$.resize = function (callback, scope) {
+$.resize = function (callback, scope = null) {
   window.addEventListener('resize', (event) => {
     callback.call(scope, event);
+  });
+};
+
+// DOCUMENT
+
+// Events
+$.ready = function (callback, scope = null) {
+  document.addEventListener('DOMContentLoaded', (event) => {
+    callback.call(scope, event);
+    document.removeEventListener('DOMContentLoaded', callback);
   });
 };
 
