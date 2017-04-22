@@ -1,9 +1,9 @@
 // API: Utils
 export default class Utils {
-
+  // Static Method
   static shared() {
     if (!Utils.instance) {
-      Utils.instance = new Utils();
+      Utils.instance = Object.create(Utils.prototype);
     }
     return Utils.instance;
   }
