@@ -6,10 +6,12 @@ export default class Result extends Observable {
     super();
     // Decorate Node
     this.node = domNode;
-    // Events
-    this.node.addEventListener('click', () => {
+    // Events (Example)
+    this.node.addEventListener('click', (event) => {
+      // Cancel event delegation
+      event.preventDefault();
       // Map native click to observable click...
-      this.dispatchEvent({
+      this.publish({
         type: 'click',
         target: this,
       });
@@ -17,6 +19,7 @@ export default class Result extends Observable {
   }
 
   get children() {
+    // TODO: Map to Result objects
     return this.node.children;
   }
 }
