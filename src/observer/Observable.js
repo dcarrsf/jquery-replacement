@@ -1,7 +1,5 @@
-
 // API: Result
 export default class Observable {
-
   constructor() {
     // Cache registered observers
     this.observers = {};
