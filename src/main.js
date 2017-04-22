@@ -1,5 +1,4 @@
-
-import $ from './lib/$.js';
+import $ from './$.js';
 
 // READY
 $.ready((event) => {
