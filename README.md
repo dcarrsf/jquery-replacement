@@ -3,7 +3,7 @@ Light-weight wrapper for DOM traversal and simple web API operations.
 
 ## Overview
 
-This mini-project evolved out of a need to drop jQuery in favor of vanilla web API. Why? jQuery is powerful, but it's heavy and includes many features that I don't commonly use. That said, the simplicity and breivity of the jQuery syntax is preferable to the more verbose web API methods. So, I created a light-weight jQuery-like syntax.
+This mini-project evolved out of a need to drop jQuery in favor of vanilla web API. Why? jQuery is powerful, but it includes many features that we don't commonly use. That said, the simplicity and breivity of the jQuery syntax is preferable to the more verbose web API methods. This library provides a simple jQuery-like syntax, including a minimal core API.
 
 ## Design Patterns
 
@@ -14,7 +14,7 @@ The concept starts with a factory function ($) that accepts a query selector in 
 The core API is simple, supporting:
 
 - DOM traversal
-- DOM events (ready, scroll, resize, mouse, touch)
+- DOM events (ready, resize)
 - CSS manipulation
 - AJAX (XMLHttpRequest, fetch, JSONP)
 
