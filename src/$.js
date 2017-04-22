@@ -16,4 +16,13 @@ $.ready = function (callback, scope) {
   });
 };
 
+// WINDOW
+
+// Events
+$.resize = function (callback, scope) {
+  window.addEventListener('resize', (event) => {
+    callback.call(scope, event);
+  });
+};
+
 export default $;
