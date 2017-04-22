@@ -1,6 +1,5 @@
 
 import $ from './lib/$.js';
-import '../sass/main.scss';
 
 // READY
 $.ready((event) => {

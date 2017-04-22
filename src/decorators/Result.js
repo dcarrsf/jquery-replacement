@@ -1,9 +1,7 @@
-
 import Observable from '../observer/Observable.js';
 
 // API: Result
 export default class Result extends Observable {
-
   constructor(domNode) {
     super();
     // Decorate Node

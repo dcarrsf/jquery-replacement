@@ -10,7 +10,7 @@ export default class Utils {
 
   // METHODS
 
-  queryAll(selector, nullIfEmpty = true) {
+  queryAll(selector, nullIfEmpty = false) {
     const results = document.querySelectorAll(selector);
     if (results.length === 0 && nullIfEmpty) {
       return null;
