@@ -1,4 +1,4 @@
-# jquery-replacement
+# webapi-design-patterns
 Light-weight wrapper for DOM traversal and simple web API operations.
 
 ## Overview
