@@ -16,6 +16,6 @@ The core API is simple, supporting:
 - DOM traversal
 - DOM events (ready, resize)
 - CSS manipulation
-- AJAX (XMLHttpRequest, fetch, JSONP)
+- AJAX (XMLHttpRequest, fetch, JSONP) (TODO)
 
 
