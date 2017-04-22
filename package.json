@@ -8,8 +8,6 @@
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "babel-core": "^6.6.4",
     "babel-eslint": "^7.1.1",
