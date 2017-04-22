@@ -6,10 +6,10 @@ export default class Result extends Observable {
     super();
     // Decorate Node
     this.el = node;
+
     // ------------------
     // Event Wrapper Example:
-
-    this.node.addEventListener('click', (event) => {
+    this.el.addEventListener('click', (event) => {
       // Cancel event delegation
       event.preventDefault();
       // Map native click to observable click...
