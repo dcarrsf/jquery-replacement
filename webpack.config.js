@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/es6/main.js'
+    app: './src/$.js'
   },
   output: {
     // Save to build (public) folder
@@ -15,7 +15,7 @@ module.exports = {
       {
         // Transpile ES6 and include it in the bundle
         loader: 'babel-loader',
-        test: path.join(__dirname, 'src/es6'),
+        test: path.join(__dirname, 'src'),
         query: {
           presets: 'es2015'
         }
