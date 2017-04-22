@@ -7,14 +7,14 @@ export default class Observable {
     this.observers = {};
   }
 
-  addListener(name, callback) {
+  subscribe(name, callback) {
     if (!this.observers[name]) {
       this.observers[name] = [];
     }
     this.observers[name].push(callback);
   }
 
-  removeListener(name, callback) {
+  unsubscribe(name, callback) {
     const callbacks = this.observers[name];
     Object.keys(callbacks).forEach((func) => {
       if (callback === func) {
@@ -23,7 +23,7 @@ export default class Observable {
     });
   }
 
-  dispatchEvent(eventObj) {
+  publish(eventObj) {
     const name = eventObj.name;
     const callbacks = this.observers[name];
     if (callbacks !== undefined) {
